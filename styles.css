@@ -1,0 +1,132 @@
+
+:root {
+    --secondary: #FCF9EB;
+    --primary: #567850;
+    --accent: #8a482d;
+    --text-dark: #ffffff;
+    --gold-colour: #ffb74e;
+    --text-light: #ffb74e;
+}
+
+body {
+    margin: 0;
+    padding: 2.2rem;
+    font-family: 'Quicksand', sans-serif;
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-dark);
+}
+
+h1 {
+    font-family: 'My Soul', cursive;
+    font-size: 3rem;
+    color: var(--gold-colour);
+    margin-bottom: 0.5rem;
+    padding: 1.25rem 1rem 0 1rem;
+}
+
+p {
+    font-family: 'Eagle Lake', serif;
+}
+
+.card {
+    background: var(--primary);
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+    /* border-radius: 20px; */
+    border: 2rem solid transparent;
+    border-image: url(./vine-border-gold.png) 50% round;
+    border-image-outset: 2.45rem;
+    border-image-width: 8rem;
+    /* background-image: url(./shire.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+/* .baby-icon {
+    margin-bottom: 1rem;
+}
+
+.baby-icon img {
+    max-height: 3.5rem;
+} */
+
+.quest-intro {
+    margin: 1rem 0 2rem 0;
+}
+
+.quest-intro p {
+    margin: 0px;
+}
+
+.name-style {
+    font-family: 'Eagle Lake', serif;
+    font-size: 1.75rem;
+    color: var(--gold-colour);
+}
+
+.details {
+    border: .1rem solid var(--secondary);
+    margin: 2rem 0 2rem 0;
+}
+
+.details p {
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+}
+
+.rsvp {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.footer {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 500px) {
+    h1 {
+    font-size: 2rem;
+    padding: 0rem;
+    }
+
+    .details p {
+    font-size: 1rem;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .card {
+        max-width: 95%;
+        border: 1rem solid transparent;
+        border-image: url(./vine-border-gold.png) 50% round;
+        border-image-outset: .9rem;
+        border-image-width: 3rem;
+    }
+
+    .card img {
+        max-width: 90%;
+    }
+}
