@@ -5,7 +5,6 @@
     --accent: #8a482d;
     --text-dark: #ffffff;
     --gold-colour: #ffb74e;
-    --text-light: #ffb74e;
 }
 
 body {
@@ -87,7 +86,7 @@ p {
 .footer {
     margin-top: 1.5rem;
     font-size: 0.95rem;
-    color: var(--text-light);
+    color: var(--gold-colour);
 }
 
 a {
