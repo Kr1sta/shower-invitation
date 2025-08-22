@@ -120,6 +120,9 @@ a:hover {
 
 .footer {
     margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     /* Pink Flower Styling */
     padding: 1.3rem 0;
