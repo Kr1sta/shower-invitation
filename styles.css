@@ -4,6 +4,10 @@
     --primary: #567850;
     --text-dark: #ffffff;
     --gold-colour: #ffb74e;
+    --glowing-gold: #fec205;
+    --glowing-red: #e83409;
+    --glowing-orange: #fc590b;
+    --orange-text: #ff8421;
 }
 
 body {
@@ -28,13 +32,34 @@ h1 {
 
 h2 {
     font-family: 'Eagle Lake', serif;
-    font-size: 1.25rem;
-    color: var(--gold-colour);
+    font-size: 1.3rem;
     padding: 0;
+    margin: 0 0 .5rem 1.8rem;
+
+    /* Plain Styling */
+    /* color: var(--primary);
+    text-shadow: -.1rem .1rem 0 var(--gold-colour); */
+
+    /* Pink Flower Styling: */
+    color: #f6a5ad;
+    text-shadow: -.1rem .1rem 0 #d37b84, .1rem -.1rem 0 #e3e6e5, 0 0 .25rem #e3e6e5, 0 0 .5rem #e3e6e5, 0 0 1rem #e3e6e5;
+
+    /* Pink Flower Darker: */
+    color: #a6adaa;
+    text-shadow: -.1rem .1rem 0 #6e7371, .1rem -.1rem 0 #e3e6e5, 0 0 .25rem #e3e6e5, 0 0 .5rem #e3e6e5, 0 0 1rem #e3e6e5;
 }
 
 p {
     font-family: 'Eagle Lake', serif;
+}
+
+a {
+    color: var(--gold-colour);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .card {
@@ -42,23 +67,11 @@ p {
     max-width: 600px;
     text-align: center;
     animation: fadeIn 2s ease-out;
-    /* border-radius: 20px; */
     border: 2rem solid transparent;
     border-image: url(./vine-border-gold.png) 50% round;
     border-image-outset: 2.45rem;
     border-image-width: 8rem;
-    /* background-image: url(./shire.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
-
-/* .baby-icon {
-    margin-bottom: 1rem;
-}
-
-.baby-icon img {
-    max-height: 3.5rem;
-} */
 
 .quest-intro {
     margin: 1rem 0 2rem 0;
@@ -89,12 +102,8 @@ p {
     font-weight: 600;
 }
 
-.footer {
-    padding-bottom: .5rem;
-}
-
 .registry-links-container {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     font-size: 0.95rem;
     color: var(--text-dark);
     display: flex;
@@ -104,28 +113,79 @@ p {
 .registry-link {
     background-color: #ffffff;
     align-content: center;
-    margin: 0 1rem;
-    /* width: 10rem; */
-    padding: 0 .5rem;
-    border: .1rem solid var(--gold-colour);
-    /* Testing: */
-    /* margin: 0 1.5rem;
-    border-image: url(./vine-border-gold.png) 50% round;
-    border-image-outset: .86rem;
-    border-image-width: 8rem; */
+    margin: 0 2rem;
+    padding: .1rem .5rem;
+    border: .1rem solid #f4c9cf;
+}
+
+.footer {
+    margin: 2rem 0;
+
+    /* Pink Flower Styling */
+    padding: 1.3rem 0;
+    background-image: url(./light_flowers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: .15rem solid #f4c9cf;
+
+    /* Evil Styling: */
+    /* padding: 1rem 0; */
+    /* background-image: url(./lava-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: .15rem solid #000; */
 }
 
 .footer img {
     max-width: 8rem;
 }
 
-a {
-    color: var(--gold-colour);
-    text-decoration: none;
+.footer a {
+    /* Remove all for icon styling */
+    padding: .5rem .75rem;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Eagle Lake', serif;
+
+    /* Pastel Shire Styling: */
+    /* color: var(--secondary); */
+    /* text-shadow: -.1rem .1rem 0 var(--gold-colour); */
+    /* text-shadow: -.1rem .1rem .1rem var(--gold-colour), .1rem -.1rem .1rem var(--gold-colour); */
+
+    /* Pink Flower Field Styling */
+    color: var(--secondary);
+    text-shadow: -.1rem .1rem 0 #d37b84, 0 0 .8rem #e0a3a9, 0 0 1.25rem #d37b84, 0 0 1.5rem #d37b84;
+
 }
 
-a:hover {
-    text-decoration: underline;
+.food-truck-container {
+    border: .1rem solid var(--secondary);
+}
+
+.food-truck-container p {
+    margin: .5rem;
+}
+
+.event-catered-container {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+.event-catered-container img {
+    max-width: 2rem;
+}
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+.pippin-quote {
+    color: var(--gold-colour);
+    font-size: .8rem;
+    margin-bottom: 0;
 }
 
 @keyframes fadeIn {
