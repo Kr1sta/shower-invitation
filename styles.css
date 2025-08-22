@@ -171,6 +171,7 @@ a:hover {
     font-size: 1.3rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: .5rem;
 }
 
@@ -199,6 +200,10 @@ a:hover {
     padding: 0rem;
     }
 
+    h2 {
+        margin: 0 0 .5rem 0;
+    }
+
     .details p {
     font-size: 1rem;
     }
@@ -217,5 +222,9 @@ a:hover {
 
     .card img {
         max-width: 90%;
+    }
+
+    .event-catered-container img {
+        max-height: 2rem;
     }
 }
